@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all">
+    <link rel="apple-touch-icon" href="logo.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <script src="/static/js/script.js"></script>
+</head>
+<body>
+<main role="main">
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row mt-4">
+            <div class="col-md-8 text-center mx-auto">
+                <a href="/"><img src="{% static 'images/logo.svg' %}" alt="Логотип" class="logo"></a>
+            </div>
+            <div class="col-md-8 main-block main-block-page w-border mx-auto mt-5">
+                <div class="first-block">
+                    <div class="row ml-5 mr-5 mb-5">
+                        <div class="main-text text-center col-md-8 mx-auto mt-4">
+                            <span class="shadow-in webkit-shadow">Добро пожаловать в личный кабинет преподавателя!</span>
+                        </div>
+                        <div class="col-md-4">
+                        <a href="robot-login.html" class="underline">
+                            <div class="form-login enter text-white text-center mt-5">
+                                <span><a href="{% url 'auth:logout' %}">Выход</a></span>
+                            </div>
+                        </a>
+                    </div>
+                        <div class="col-md-12 mt-5">
+                            <div class="row">
+                                <div class="col-md-8 main-text text-uppercase border-underline">
+                                    <span>Мои курсы</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-5">
+                            <div class="row">
+                                <div class="col-md-4 main-text-p">
+                                    <div>
+                                        <div>
+                                            <span class="text-area mr-3" data-block-id="1">WeDo 1.0</span>
+                                            <img src="{% static 'images/ellipse-top.svg' %}" alt="Свернуть" class="ellipse">
+                                        </div>
+                                    </div>
+                                    <div class="all-learns">
+                                        <div class="mt-3" data-id="1" data-block-id="1">
+                                            <u class="list-u"></u><span class="learn-number">Урок 1</span>
+                                        </div>
+                                        <div class="mt-3" data-id="2" data-block-id="1">
+                                            <u class="list-u"></u><span class="learn-number">Урок 2</span>
+                                        </div>
+                                        <div class="mt-3" data-id="3" data-block-id="1">
+                                            <u class="list-u"></u><span class="learn-number">Урок 3</span>
+                                        </div>
+                                        <div class="mt-3" data-id="4" data-block-id="1">
+                                            <u class="list-u"></u><span class="learn-number">Урок 4</span>
+                                        </div>
+                                        <div class="mt-3" data-id="5" data-block-id="1">
+                                            <u class="list-u"></u><span class="learn-number">Урок 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 main-text-p">
+                                    <div>
+                                        <div>
+                                            <span class="text-area mr-3" data-block-id="2">WeDo 2.0</span>
+                                            <img src="{% static 'images/ellipse-bottom.svg' %}" alt="Свернуть" class="ellipse">
+                                        </div>
+                                    </div>
+                                    <div class="all-learns d-none">
+                                        <div class="mt-3" data-id="1" data-block-id="2">
+                                            Урок 1
+                                        </div>
+                                        <div class="mt-3" data-id="2" data-block-id="2">
+                                            Урок 2
+                                        </div>
+                                        <div class="mt-3" data-id="3" data-block-id="2">
+                                            Урок 3
+                                        </div>
+                                        <div class="mt-3" data-id="4" data-block-id="2">
+                                            Урок 4
+                                        </div>
+                                        <div class="mt-3" data-id="5" data-block-id="2">
+                                            Урок 5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 main-text-p">
+                                    <div>
+                                        <div>
+                                            <span class="text-area mr-3" data-block-id="3">Mindstroms Ev3</span>
+                                            <img src="{% static 'images/ellipse-bottom.svg' %}" alt="Свернуть" class="ellipse">
+                                        </div>
+                                    </div>
+                                    <div class="all-learns d-none">
+                                        <div class="mt-3" data-id="1" data-block-id="3">
+                                            Урок 1
+                                        </div>
+                                        <div class="mt-3" data-id="2" data-block-id="3">
+                                            Урок 2
+                                        </div>
+                                        <div class="mt-3" data-id="3" data-block-id="3">
+                                            Урок 3
+                                        </div>
+                                        <div class="mt-3" data-id="4" data-block-id="3">
+                                            Урок 4
+                                        </div>
+                                        <div class="mt-3" data-id="5" data-block-id="3">
+                                            Урок 5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description d-none ">
+                    <div class="row ml-5 mr-5">
+                        <div class="col-md-12 mb-3">
+                            <div class="row">
+                                <div class="col-md-8 mt-5">
+                                    <div class="row">
+                                        <div class="col-md-12 main-text">
+                                            <span class="description-title text-uppercase border-underline under">lego wedo 1.0 / урок 1</span>
+                                            <div class="inner-text mt-5 mb-5 col-md-12">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-5">
+                                    <div class="row">
+                                        <div class="col-md-12 main-text menu-right">
+                                            <div class="mt-3 learn text-uppercase" data-id="1" data-block-id="1">
+                                                Урок 1 <img src="/static/images/ellipse-top.svg" alt="Свернуть"
+                                                            class="ellipse2">
+                                            </div>
+                                            <div class="menu-lear-in d-none" data-id="1">
+                                                <div class="mt-3">
+                                                    Этапы урока
+                                                </div>
+                                                <div class="mt-3">
+                                                    <a href = "/lk/1">Презентация</a>
+                                                </div>
+                                                <div class="mt-3">
+                                                    Аннотация к уроку
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 learn text-uppercase" data-id="2" data-block-id="1">
+                                                Урок 2 <img src="/static/images/ellipse-top.svg" alt="Свернуть"
+                                                            class="ellipse2">
+                                            </div>
+                                            <div class="menu-lear-in d-none" data-id="2">
+                                                <div class="mt-3">
+                                                    Этапы урока
+                                                </div>
+                                                <div class="mt-3">
+                                                    Презентация
+                                                </div>
+                                                <div class="mt-3">
+                                                    Сборка
+                                                </div>
+                                                <div class="mt-3">
+                                                    Рефлексия
+                                                </div>
+                                                <div class="mt-3">
+                                                    Анотация к уроку
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 learn text-uppercase" data-id="3" data-block-id="1">
+                                                Урок 3 <img src="/static/images/ellipse-top.svg" alt="Свернуть"
+                                                            class="ellipse2">
+                                            </div>
+                                            <div class="menu-lear-in d-none" data-id="3">
+                                                <div class="mt-3">
+                                                    Этапы урока
+                                                </div>
+                                                <div class="mt-3">
+                                                    Презентация
+                                                </div>
+                                                <div class="mt-3">
+                                                    Сборка
+                                                </div>
+                                                <div class="mt-3">
+                                                    Рефлексия
+                                                </div>
+                                                <div class="mt-3">
+                                                    Анотация к уроку
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 learn text-uppercase" data-id="4" data-block-id="1">
+                                                Урок 4 <img src="/static/images/ellipse-top.svg" alt="Свернуть"
+                                                            class="ellipse2">
+                                            </div>
+                                            <div class="menu-lear-in d-none" data-id="4">
+                                                <div class="mt-3">
+                                                    Этапы урока
+                                                </div>
+                                                <div class="mt-3">
+                                                    Презентация
+                                                </div>
+                                                <div class="mt-3">
+                                                    Сборка
+                                                </div>
+                                                <div class="mt-3">
+                                                    Рефлексия
+                                                </div>
+                                                <div class="mt-3">
+                                                    Анотация к уроку
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 learn text-uppercase" data-id="5" data-block-id="1">
+                                                Урок 5 <img src="/static/images/ellipse-top.svg" alt="Свернуть"
+                                                            class="ellipse2">
+                                            </div>
+                                            <div class="menu-lear-in d-none" data-id="5">
+                                                <div class="mt-3">
+                                                    Этапы урока
+                                                </div>
+                                                <div class="mt-3">
+                                                    Презентация
+                                                </div>
+                                                <div class="mt-3">
+                                                    Сборка
+                                                </div>
+                                                <div class="mt-3">
+                                                    Рефлексия
+                                                </div>
+                                                <div class="mt-3">
+                                                    Анотация к уроку
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12 mx-auto text-center mt-4 all-text">
+                Остались вопросы? Мы всегда рады с вами пообщаться!
+            </div>
+            <div class="col-md-12 mx-auto text-center mt-4">
+                <img src="/static/images/u_telegram.svg" alt="Telegram">
+                <img src="/static/images/u_whatsapp-alt.svg" alt="Whatsapp" class="ml-4">
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
