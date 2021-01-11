@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('Gilroy-Regular.eot');
+    src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Regular.woff') format('woff'),
+    url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Gilroy Regular' !important;
+}
+
+.main-block {
+    background: #528DDF;
+    border-radius: 19px;
+    border: 1px solid #000;
+    margin-top: 10%;
+}
+
+.main-block-page {
+    margin-top: 0px !important;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.form-login {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 36px;
+    border: 1px solid #323E77;
+    min-height: 43px;
+}
+
+.enter {
+    background: #323E77;
+    font-size: 24px !important;
+}
+
+.enter {
+    background: #323E77;
+    font-size: 24px !important;
+}
+
+.link-enter {
+    color: white;
+    text-decoration: none;
+}
+
+.link-enter:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.link-enter:hover .enter span {
+    text-decoration: none !important;
+    border-bottom: 1px solid #fff;
+}
+
+.forget:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.form-login {
+    font-size: 18px;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.sticker {
+    right: -4%;
+    top: -25%;
+    position: absolute;
+}
+
+.container {
+    max-width: 1526px !important;
+}
+
+.main-text {
+    color: white;
+    font-size: 30px;
+}
+
+.main-text-p {
+    color: white;
+    font-size: 30px;
+}
+
+.border-underline span {
+    border-bottom: 2px solid #fff;
+}
+
+.under {
+    border-bottom: 2px solid #fff;
+}
+
+.all-text {
+    font-size: 24px;
+}
+
+.text-area {
+    float: left;
+    padding-top: 5px;
+}
+
+.ellipse {
+    cursor: pointer;
+}
+
+.menu-right {
+    font-size: 24px;
+    text-align: right;
+}
+
+.inner-text {
+    background: #fff;
+    height: 400px;
+    color: #000;
+    min-height: 500px;
+}
+
+.all-learns div {
+    cursor: pointer;
+}
+
+.all-learns div u {
+    display: list-item;
+    list-style-position: inside;
+}
+
+.menu-right div {
+    cursor: pointer;
+}
+
+.shadow-in {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+    min-height: 43px;
+    outline: none;
+    border: 0px;
+    width: 100%;
+    border-radius: 36px;
+}
+
+.underline:hover {
+    text-decoration: none;
+}
+
+.underline:hover span {
+    text-decoration: none;
+    border-bottom: 1px solid white !important;
+}
+
+.w-border {
+    border: unset;
+}
+
+.list-u {
+    float: left;
+    margin-top: -5px;
+}
+
+.webkit-shadow {
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+div u::marker {
+    font-size: 14px;
+}
+
+@media (max-width: 1660px) {
+    .sticker {
+        width: 200px;
+        right: 0%;
+        top: -130px;
+    }
+
+    .welcome2 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .sticker {
+        width: 100px;
+        right: 0%;
+        top: -50px;
+    }
+
+    .welcome2 {
+        width: 50%;
+    }
+}
